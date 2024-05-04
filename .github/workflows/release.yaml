@@ -10,13 +10,6 @@ jobs:
       matrix:
         os: [ "ubuntu-latest" ]
     steps:
-      - name: Clone Base Repository
-        uses: actions/checkout@v3
-        with:
-          repository: ${{ secrets.GH_PATH}}
-          fetch-depth: 0
-          token: ${{ secrets.GH_TOKEN}}
-
       - name: Clone TVSpider Repository
         uses: actions/checkout@v3
         with:
