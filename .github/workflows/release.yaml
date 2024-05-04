@@ -27,8 +27,8 @@ jobs:
 
       - name:  Commit JS Config files
         run: |
-          git config --global user.email "${{ secrets.GT_EMAIL }}"
-          git config --global user.name "${{ secrets.GT_ACTOR }}"
+          git config --global user.email "416055491@qq.com"
+          git config --global user.name "zishuang951"
           checkname=$(git rev-list --max-parents=0 HEAD)
           git checkout  $checkname -b js  ##分支不存在用这个
           cp -r code/18_open_config.json ./
